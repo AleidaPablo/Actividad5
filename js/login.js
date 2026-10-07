@@ -1,4 +1,3 @@
-// ===== LOGIN (login.html) =====
 const formLogin = document.getElementById('formLogin');
 
 if (formLogin) {

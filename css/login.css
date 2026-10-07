@@ -35,12 +35,12 @@ body {
   text-shadow: 0 3px 14px rgba(90, 60, 140, .35);
 }
 
-/* Tarjeta */
+
 .tarjeta {
   position: relative;
   width: 100%;
   max-width: 440px;
-  margin-top: 56px; /* espacio para el avatar que sobresale */
+  margin-top: 56px; 
   padding: 72px 2.2rem 2rem;
   background: #fff;
   border-radius: 36px;
@@ -60,7 +60,7 @@ body {
   border-radius: 50%;
 }
 
-/* Campos */
+
 .campo {
   position: relative;
   margin-bottom: .9rem;
