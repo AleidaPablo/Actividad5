@@ -24,13 +24,13 @@ if (formLogin) {
       inputCorreo.focus();
       return;
     }
-    if (!validarPassword(password)) {
-      mensajeError.textContent = 'La contraseña no cumple los requisitos.';
+    
+    if (!validarContraseña(password)) {
+      mensajeError.textContent = 'La contraseña debe tener al menos 8 caracteres.';
       inputPassword.focus();
       return;
     }
 
-    
     if (chkRecordar.checked) {
       localStorage.setItem('correoRecordado', correo);
     } else {
@@ -41,9 +41,8 @@ if (formLogin) {
     window.location.href = 'index.html';
   });
 
- 
   document.getElementById('olvide').addEventListener('click', (e) => {
     e.preventDefault();
-    mensajeError.textContent = 'Función no disponible en esta simulación.';
+    mensajeError.textContent = 'Función no disponible.';
   });
 }
