@@ -24,9 +24,11 @@ if (formLogin) {
       inputCorreo.focus();
       return;
     }
-    
-    if (!validarContraseña(password)) {
-      mensajeError.textContent = 'La contraseña debe tener al menos 8 caracteres.';
+
+    // Contraseña fuerte: 8+ caracteres, mayúscula, minúscula, número y símbolo
+    const faltas = erroresPassword(password);
+    if (faltas.length > 0) {
+      mensajeError.textContent = faltas.join(' · ');
       inputPassword.focus();
       return;
     }
