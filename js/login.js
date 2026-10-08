@@ -25,7 +25,6 @@ if (formLogin) {
       return;
     }
 
-    // Contraseña fuerte: 8+ caracteres, mayúscula, minúscula, número y símbolo
     const faltas = erroresPassword(password);
     if (faltas.length > 0) {
       mensajeError.textContent = faltas.join(' · ');
