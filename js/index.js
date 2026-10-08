@@ -58,9 +58,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (edad >= 18) {
-            contenidoModalEdad.innerHTML = `<i class="bi bi-check-circle-fill text-success fs-1 mb-2"></i><h5>El usuario <strong>${nombre}</strong> es <u>MAYOR DE EDAD</u> (${edad} años).</h5>`;
+            contenidoModalEdad.innerHTML = 
+            `<div class="icono-modal-contenedor mx-auto mb-3 text-success-pastel"> <i class="bi bi-patch-check-fill"></i>
+            </div>
+            <h4 class="fw-semibold mb-1" style="color: #3c2a4d;">El usuario <span class="texto-destacado-purple">${nombre}</span>
+            </h4>
+            <p class="badge-edad-pastel mayor">MAYOR DE EDAD (${edad} años)</p>`;
         } else {
-            contenidoModalEdad.innerHTML = `<i class="bi bi-exclamation-triangle-fill text-warning fs-1 mb-2"></i> <h5>El usuario <strong>${nombre}</strong> es <u>MENOR DE EDAD</u> (${edad} años).</h5>`;
+    contenidoModalEdad.innerHTML =
+        `<div class="icono-modal-contenedor mx-auto mb-3 text-warning-pastel">
+            <i class="bi bi-exclamation-heart-fill"></i>
+        </div>
+        <h4 class="fw-semibold mb-1" style="color: #3c2a4d;">
+            El usuario <span class="texto-destacado-purple">${nombre}</span>
+        </h4>
+        <p class="badge-edad-pastel menor">MENOR DE EDAD (${edad} años)</p>`;
         }
         
         modalEdad.show();
