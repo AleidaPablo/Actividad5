@@ -30,6 +30,6 @@ function validarPassword(pass) {
 }
 
 function validarNumeroControl(numControl) {
-  const control = /^\d{6}$/;   
+  const control = /^\d{8}$/;   
   return control.test(numControl);
 }
