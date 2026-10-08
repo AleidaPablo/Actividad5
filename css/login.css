@@ -1,5 +1,5 @@
 body.pagina {
-  background: linear-gradient(135deg, #c6b2eb, #9bd7f5, #f7a8c4);
+  background:  #efc7fb;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -24,7 +24,7 @@ body.pagina {
 .avatar {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #c6b2eb, #f7a8c4);
+  background: #ffc4d8;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -43,7 +43,7 @@ body.pagina {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #a2ebd8;
+  color: #eba2e1;
   font-size: 1.2rem;
 }
 
@@ -65,8 +65,8 @@ body.pagina {
   padding: 12px;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(135deg, #c6b2eb, #f7a8c4);
-  color: #ffffff;
+  background:  #ffc4d8;
+  color: #0d0000;
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 1rem;
