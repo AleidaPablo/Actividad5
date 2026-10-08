@@ -41,13 +41,14 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (!validarContraseña(clave)) {
-            mensajeError.textContent = 'La contraseña debe tener al menos 8 caracteres';
+        const erroresPass = erroresPassword(clave);
+        if (erroresPass.length > 0) {
+            mensajeError.textContent = `Contraseña inválida: ${erroresPass[0]}`;
             return;
         }
 
         if (!validarNumeroControl(numControl)) {
-            mensajeError.textContent = 'El número de control debe tener 7 dígitos';
+            mensajeError.textContent = 'El número de control debe tener exactamente 8 dígitos';
             return;
         }
 
