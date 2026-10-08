@@ -1,5 +1,5 @@
 body.pagina {
-  background:  #efc7fb;
+   background:  #efc7fb;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -9,12 +9,12 @@ body.pagina {
 }
 
 .tarjeta {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 20px;
+  background: #ffffff;
+  border-radius: 28px;
   padding: 2.5rem;
   width: 100%;
   max-width: 420px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 15px 35px rgba(106, 27, 154, 0.12);
 }
 
 .titulo-principal {
@@ -24,13 +24,13 @@ body.pagina {
 .avatar {
   width: 80px;
   height: 80px;
-  background: #ffc4d8;
+  background:#7b42f6;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 1.5rem auto;
-  box-shadow: 0 5px 15px rgba(198, 178, 235, 0.4);
+  box-shadow: 0 5px 15px rgba(123, 66, 246, 0.18);
 }
 
 .campo {
@@ -43,41 +43,49 @@ body.pagina {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  color: #eba2e1;
+  color: #7b42f6;
   font-size: 1.2rem;
 }
 
 .campo-input {
   width: 100%;
   padding: 12px 15px 12px 45px;
-  border: 2px solid #eef0f5;
-  border-radius: 12px;
+  border: 1.5px solid #e2d7f3;
+  border-radius: 14px;
+  background-color: #faf7fd;
   outline: none;
+  box-sizing: border-box;
+  transition: all 0.25s ease;
 }
 
 .campo-input:focus {
-  border-color: #c6b2eb;
-  box-shadow: 0 0 10px rgba(198, 178, 235, 0.3);
+  background-color: #ffffff;
+  border-color: #7b42f6;
+  box-shadow: 0 0 0 4px rgba(123, 66, 246, 0.12);
 }
 
 .boton-login {
   width: 100%;
-  padding: 12px;
+  padding: 13px;
   border: none;
-  border-radius: 12px;
-  background:  #ffc4d8;
-  color: #0d0000;
+  border-radius: 14px;
+  background: #8e54e9;
+  color: #ffffff;
   font-weight: 600;
   cursor: pointer;
   margin-bottom: 1rem;
+  box-shadow: 0 6px 18px rgba(142, 84, 233, 0.35);
+  transition: all 0.25s ease;
 }
 
 .boton-login:hover {
-  opacity: 0.95;
+  background: #7b42f6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(123, 66, 246, 0.45);
 }
 
 .mensaje-error {
-  color: #e63946;
+  color: #d32f2f;
   font-size: 0.875rem;
   font-weight: 600;
   text-align: center;
@@ -94,15 +102,21 @@ body.pagina {
 }
 
 .enlace-olvide {
-  color: #c6b2eb;
+  color: #7b42f6;
   text-decoration: none;
   font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.enlace-olvide:hover {
+  color: #4a154b;
+  text-decoration: underline;
 }
 
 .separador {
   text-align: center;
   margin: 1.5rem 0;
-  color: #888888;
+  color: #7a6b8e;
   font-size: 0.85rem;
   position: relative;
 }
@@ -115,15 +129,19 @@ body.pagina {
 .boton-red {
   flex: 1;
   padding: 10px;
-  border: 2px solid #eef0f5;
-  border-radius: 10px;
+  border: 1.5px solid #e2d7f3;
+  border-radius: 12px;
+  background-color: #faf7fd;
   text-align: center;
   text-decoration: none;
-  color: #2d2b3a;
+  color: #3b2a54;
   font-weight: 600;
   font-size: 0.875rem;
+  transition: all 0.25s ease;
 }
 
 .boton-red:hover {
-  background-color: #fdf1a9;
+  background-color: #d1f2eb;
+  border-color: #b8e8de;
+  color: #2a1b40;
 }
