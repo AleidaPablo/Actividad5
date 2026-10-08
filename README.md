@@ -8,7 +8,7 @@
 * **Materia:** Programación Web
 * **Integrantes del Equipo:**
   * Aleida Pablo
-  * 
+  * velasco martinez zeferino
 * **Descripción Breve:** 
   Aplicación web interactiva compuesta por un módulo de inicio de sesión *Login* con validaciones estrictas y un panel principal *Dashboard* que incluye menú lateral colapsable, barra de navegación personalizada con datos de sesión, formulario de captura de datos de usuario en tiempo real y verificación de edad mediante modal interactivo.
 
@@ -32,3 +32,45 @@
 * En `js/index.js`, al cargar el DOM, se ejecuta la lectura de la sesión:
   ```javascript
   const correoUsuarioSesion = sessionStorage.getItem('usuario');
+---
+
+## 4. Proceso de Creación
+
+### 1. Login
+Se diseñó `login.html` con el formulario de correo y contraseña, el botón **Iniciar sesión**, la opción **Recordarme** y los accesos con Google y Facebook. Las validaciones se conectaron en `login.js` con las funciones de `utileria.js`.
+
+![Pantalla de login](img/login.png)
+
+![Login con mensaje de error de validación](img/login-error.png)
+
+### 2. Sidebar (menú lateral)
+Se creó el menú lateral con la opción **Usuarios** y su submenú desplegable **Captura**. El botón hamburguesa abre y cierra el menú.
+
+![Sidebar abierto](img/sidebar.png)
+
+![Submenú Usuarios > Captura desplegado](img/submenu.png)
+
+
+### 3. Navbar con el usuario
+En la parte derecha de la barra superior se muestra el correo capturado en el login. Al dar clic se despliega el menú con la opción **Salir del sistema**.
+
+![Navbar con el nombre del usuario](img/navbar.png)
+
+![Menú desplegable con la opción Salir](img/salir.png)
+
+### 4. Número de control
+Se agregó el campo al formulario de captura y se valida que tenga exactamente 6 dígitos.
+
+![Formulario de captura completo](img/captura.png)
+
+![Error al escribir un número de control inválido](img/numero_control.png)
+
+### 5. Modal de edad
+Al guardar un registro válido se abre un modal que indica si la persona es mayor o menor de edad.
+
+![Modal: mayor de edad](img/Modal_mayor.png)
+
+![Modal: menor de edad](img/modal_menor.png)
+
+---
+
